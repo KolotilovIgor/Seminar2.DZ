@@ -3,11 +3,13 @@
 //наибольшую цифру числа.
 int num = new Random().Next(10,100);
 Console.WriteLine(num);
-int num1 = num/10 %10;
+int num1 = num/10;
 int num2 = num % 10;
-int resault = 1;
-for (int i = 0; i <num2; i++)
+if (num1 > num2)
 {
-    resault =  resault * num2;
+    Console.WriteLine("Цифра 1 больше цифры 2: " + num1 + " " + num2);
 }
-Console.WriteLine(resault);
+else
+{
+    Console.WriteLine("Цифра 2 больше цифры 1: " + num1 + " " + num2);
+}
