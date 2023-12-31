@@ -7,9 +7,9 @@ int num1 = num/10;
 int num2 = num % 10;
 if (num1 > num2)
 {
-    Console.WriteLine("Цифра 1 больше цифры 2: " + num1 + " " + num2);
+    Console.WriteLine(num1);
 }
 else
 {
-    Console.WriteLine("Цифра 2 больше цифры 1: " + num1 + " " + num2);
+    Console.WriteLine(num2);
 }
