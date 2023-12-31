@@ -3,13 +3,10 @@
 //показывает его цифры через запятую.
 
 Console.WriteLine("введите число");
-int num = Convert.ToInt32(Console.ReadLine());
-
-int negNam = -1 * num;
-
-while(negNam <= num)
-{
-    Console.Write(negNam);
-    Console.Write(" ");
-    negNam++;
-}
+string? num = Console.ReadLine();
+char[] arr = num.ToCharArray();
+Console.WriteLine();
+for (int i = 0; i < num.Length; i++)
+      {
+         Console.Write("{1}, ", i, arr[i]);
+     }
