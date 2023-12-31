@@ -8,26 +8,33 @@ Console.WriteLine("Введите число Y");
 int num2 = Convert.ToInt32(Console.ReadLine());
 if (num1 > 0 && num2 > 0)
 {
-    Console.WriteLine("1");
+  Console.WriteLine("1");
 }
 else
 {
-    if (num1 < 0 && num2>0)
+  if (num1 < 0 && num2 > 0)
+  {
+    Console.WriteLine("2");
+  }
+  else
+  {
+    if (num1 < 0 && num2 < 0)
     {
-       Console.WriteLine("2");
+      Console.WriteLine("3");
     }
     else
     {
-      if (num1 < 0 && num2<0)
-      {
-        Console.WriteLine("3");
-      }  
-      else
-      {
-             if (num1 > 0 && num2<0)
+      if (num1 > 0 && num2 < 0)
       {
         Console.WriteLine("4");
-      }  
+      }
+      else
+      {
+              if (num1 == 0 && num2 == 0)
+      {
+        Console.WriteLine("Не верно заданы координаты");
+      }
       }
     }
+  }
 }
